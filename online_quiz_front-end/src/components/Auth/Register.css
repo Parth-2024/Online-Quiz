@@ -1,0 +1,73 @@
+/* Register.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #052341;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .register-heading {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #a9b4c0;
+    text-align: center;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #074486;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  }
+  
+  .register-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0f5193;
+    border-radius: 4px;
+    background-color: #405162;
+    color: #fff;
+  }
+  
+  .register-select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0f5193;
+    border-radius: 4px;
+    background-color: #405162;
+    color: #fff;
+  }
+  
+  .register-button {
+    padding: 10px 15px;
+    background-color: #0243cf;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .register-button:hover {
+    background-color: #4a7dea;
+  }
+  
+  .register-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    border-radius: 0.25rem;
+  }

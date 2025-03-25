@@ -1,0 +1,127 @@
+/* QuizManagement.css */
+
+.quiz-management-container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #052341;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    align-items: start; /* Changed to start */
+    min-height: 100vh;
+    height: 100%; /* Changed to 100% */
+    position: relative; /* Changed to relative */
+    box-sizing: border-box;
+}
+
+.quiz-management-heading {
+    font-size: 2.2em;
+    color: #a9b4c0;
+    text-align: center;
+    grid-row: 1;
+    margin-bottom: 20px; /* Added margin */
+}
+
+.create-quiz-button {
+    background-color: #074486;
+    color: rgb(243, 197, 197);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    grid-row: 2;
+    justify-self: center;
+    margin-bottom: 20px; /* Added margin */
+}
+
+.create-quiz-button:hover {
+    background-color: #0056b3;
+}
+
+.table-wrapper {
+    width: 90%; /* Increased width */
+    max-height: calc(100vh - 150px); /* Adjusted max-height */
+    overflow-x: auto;
+    overflow-y: auto;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.quiz-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    background-color: rgb(5, 12, 94);
+}
+
+.quiz-table th,
+.quiz-table td {
+    border: 1px solid #0f5193;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.quiz-table thead {
+    background: linear-gradient(to bottom, #4f89c4, #7a9bbd);
+    color: #495057;
+    font-weight: 500;
+}
+
+.quiz-table tbody tr:nth-child(even) {
+    background-color: #405162;
+}
+
+.quiz-table tbody tr:hover {
+    background-color: #041322;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.actions-column {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Center vertically */
+    gap: 8px;
+}
+
+.edit-button {
+    background-color: #0243cf;
+    color: white; /* Changed color */
+    padding: 6px 10px;
+    border: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.edit-button:hover {
+    background-color: #4a7dea;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}

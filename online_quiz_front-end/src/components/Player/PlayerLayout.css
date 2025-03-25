@@ -1,0 +1,53 @@
+/* PlayerLayout.css */
+
+.player-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background */
+    color: #333;
+  }
+  
+  .player-header {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .player-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .player-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .player-nav li {
+    padding: 10px 20px;
+  }
+  
+  .player-nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.15s ease-in-out;
+  }
+  
+  .player-nav-link:hover {
+    color: #ddd;
+  }
+  
+  .player-nav-link-active {
+    border-bottom: 2px solid white;
+  }
+  
+  .player-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allow content to scroll */
+    background-color: white;
+  }

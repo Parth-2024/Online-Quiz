@@ -1,0 +1,83 @@
+/* UserManagement.css */
+.user-management-container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #052341;
+    padding: 20px;
+    min-height: 100vh;
+    height: 100%;
+    color: #a9b4c0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center; /* Center the table */
+  }
+  
+  .user-management-heading {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    background-color: #074486;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #0f5193;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .user-table thead {
+    background: linear-gradient(to bottom, #4f89c4, #7a9bbd);
+    color: #495057;
+    font-weight: 500;
+  }
+  
+  .user-table tbody tr:nth-child(even) {
+    background-color: #405162;
+  }
+  
+  .user-table tbody tr:hover {
+    background-color: #041322;
+    transition: background-color 0.1s ease-in-out;
+  }
+  
+  .role-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .user-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }

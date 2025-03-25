@@ -1,0 +1,54 @@
+/* AdminLayout.css */
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #052341;
+    color: #a9b4c0;
+  }
+  
+  .admin-sidebar {
+    width: 250px; /* Adjust sidebar width as needed */
+    background-color: #074486;
+    padding-top: 20px;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav li {
+    padding: 10px 20px;
+  }
+  
+  .sidebar-link {
+    display: block;
+    color: #a9b4c0;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #041322;
+  }
+  
+  .sidebar-link-active {
+    background-color: #4f89c4;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allow content to scroll */
+  }
